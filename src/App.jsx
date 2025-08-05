@@ -1,16 +1,31 @@
 import React from 'react';
+import { ToastContainer } from 'react-toastify';
+import { TripProvider } from './context/TripContext';
 import AppRoutes from './routes/AppRoutes';
-import FavoritesProvider from './context/FavoritesContext'; // ✅ default import
-import MainLayout from './layouts/MainLayout';
+import './styles/globals.css';
+import 'react-toastify/dist/ReactToastify.css';
 
-const App = () => {
+function App() {
   return (
-    <FavoritesProvider>
-      
+    <TripProvider>
+      <div className="App">
         <AppRoutes />
-      
-    </FavoritesProvider>
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          toastClassName="backdrop-blur-sm"
+        />
+      </div>
+    </TripProvider>
   );
-};
+}
 
 export default App;
