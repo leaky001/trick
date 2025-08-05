@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 
-// Import pages (we'll create these next)
+
 import Landing from '../pages/Landing';
 import Planner from '../pages/Planner';
 import Itinerary from '../pages/Itinerary';

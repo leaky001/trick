@@ -1,4 +1,4 @@
-// localStorage utility functions for GlobeTrekker
+
 
 const STORAGE_KEYS = {
   TRIPS: 'globetrekker_trips',
@@ -6,7 +6,7 @@ const STORAGE_KEYS = {
   USER_PREFERENCES: 'globetrekker_preferences'
 };
 
-// Generic localStorage functions
+
 export const getFromStorage = (key, defaultValue = null) => {
   try {
     const item = localStorage.getItem(key);
@@ -37,7 +37,7 @@ export const removeFromStorage = (key) => {
   }
 };
 
-// Trip-specific functions
+
 export const getAllTrips = () => {
   return getFromStorage(STORAGE_KEYS.TRIPS, []);
 };
@@ -73,7 +73,7 @@ export const deleteTrip = (id) => {
   return saveToStorage(STORAGE_KEYS.TRIPS, updatedTrips);
 };
 
-// Packing list functions
+
 export const getPackingList = (tripId) => {
   const packingLists = getFromStorage(STORAGE_KEYS.PACKING_LISTS, {});
   return packingLists[tripId] || [];

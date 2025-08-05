@@ -13,10 +13,10 @@ import {
   deletePackingItem as deletePackingItemFromStorage
 } from '../utils/localStorage';
 
-// Create the context
+
 const TripContext = createContext();
 
-// Action types
+
 const ACTIONS = {
   SET_TRIPS: 'SET_TRIPS',
   ADD_TRIP: 'ADD_TRIP',
@@ -30,7 +30,7 @@ const ACTIONS = {
   UPDATE_PACKING_ITEM: 'UPDATE_PACKING_ITEM'
 };
 
-// Initial state
+
 const initialState = {
   trips: [],
   currentTrip: null,
@@ -39,7 +39,7 @@ const initialState = {
   error: null
 };
 
-// Reducer function
+
 const tripReducer = (state, action) => {
   switch (action.type) {
     case ACTIONS.SET_TRIPS:
@@ -134,7 +134,7 @@ const tripReducer = (state, action) => {
 export const TripProvider = ({ children }) => {
   const [state, dispatch] = useReducer(tripReducer, initialState);
 
-  // Load trips from localStorage on mount
+  
   useEffect(() => {
     try {
       const savedTrips = getAllTrips();
