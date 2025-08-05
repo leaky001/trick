@@ -159,19 +159,19 @@ const Footer = () => {
               to="/privacy"
               className="text-gray-500 hover:text-primary-600 text-sm transition-colors duration-200"
             >
-              Privacy Policy
+        
             </Link>
             <Link
               to="/terms"
               className="text-gray-500 hover:text-primary-600 text-sm transition-colors duration-200"
             >
-              Terms of Service
+            
             </Link>
             <Link
               to="/cookies"
               className="text-gray-500 hover:text-primary-600 text-sm transition-colors duration-200"
             >
-              Cookie Policy
+          
             </Link>
           </div>
         </div>
