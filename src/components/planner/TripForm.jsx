@@ -28,7 +28,7 @@ const TripForm = ({ initialData = null, onSubmit, onCancel, isLoading = false })
     { value: 'romantic', label: '💕 Romantic' }
   ];
 
-  const currencies = ['USD', 'EUR', 'GBP', 'JPY', 'CAD', 'AUD', 'CHF', 'CNY'];
+  const currencies = ['USD','NGN', 'EUR', 'GBP', 'JPY', 'CAD', 'AUD', 'CHF', 'CNY'];
 
   const validateForm = () => {
     const newErrors = {};

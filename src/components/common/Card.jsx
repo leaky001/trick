@@ -51,7 +51,7 @@ const Card = ({
   );
 };
 
-// Card sub-components for better composition
+
 Card.Header = ({ children, className = '' }) => (
   <div className={`p-6 pb-4 ${className}`}>
     {children}

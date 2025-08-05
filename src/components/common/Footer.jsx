@@ -152,7 +152,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            © {currentYear} GlobeTrekker. All rights reserved.
+            © {currentYear} GlobeTrekker. All rights reserved for 30days 30apps.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6">
             <Link
